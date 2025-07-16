@@ -1,0 +1,183 @@
+{
+  "stock_data": {
+    "RICE_BASMATI": {
+      "loose_stock": 50.0,
+      "packed_stock": {
+        "B07BASMATI1KG": 25,
+        "B07BASMATI5KG": 10
+      },
+      "opening_stock": 100.0,
+      "last_updated": "2025-07-16T20:00:00"
+    },
+    "RICE_JASMINE": {
+      "loose_stock": 30.0,
+      "packed_stock": {
+        "B07JASMINE1KG": 15
+      },
+      "opening_stock": 50.0,
+      "last_updated": "2025-07-16T20:00:00"
+    },
+    "WHEAT_FLOUR": {
+      "loose_stock": 40.0,
+      "packed_stock": {
+        "B07WHEAT1KG": 20,
+        "B07WHEAT5KG": 8
+      },
+      "opening_stock": 80.0,
+      "last_updated": "2025-07-16T20:00:00"
+    },
+    "PULSES_TOOR": {
+      "loose_stock": 25.0,
+      "packed_stock": {
+        "B07TOOR1KG": 12,
+        "B07TOOR2KG": 6
+      },
+      "opening_stock": 50.0,
+      "last_updated": "2025-07-16T20:00:00"
+    }
+  },
+  "transactions": [
+    {
+      "id": 1,
+      "timestamp": "2025-07-16T10:00:00",
+      "date": "2025-07-16",
+      "type": "Stock Inward",
+      "parent_id": "RICE_BASMATI",
+      "parent_name": "Basmati Rice Premium",
+      "asin": null,
+      "quantity": 0,
+      "weight": 100.0,
+      "notes": "Initial stock"
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-07-16T11:00:00",
+      "date": "2025-07-16",
+      "type": "Packing",
+      "parent_id": "RICE_BASMATI",
+      "parent_name": "Basmati Rice Premium",
+      "asin": "B07BASMATI1KG",
+      "quantity": 25,
+      "weight": 25.0,
+      "notes": "Packed for sales"
+    },
+    {
+      "id": 3,
+      "timestamp": "2025-07-16T12:00:00",
+      "date": "2025-07-16",
+      "type": "FBA Sale",
+      "parent_id": "RICE_BASMATI",
+      "parent_name": "Basmati Rice Premium",
+      "asin": "B07BASMATI1KG",
+      "quantity": 5,
+      "weight": 5.0,
+      "notes": "FBA Sale | Order: AMZ-123456"
+    }
+  ],
+  "parent_items": {
+    "RICE_BASMATI": {
+      "name": "Basmati Rice Premium",
+      "unit": "kg",
+      "category": "Rice"
+    },
+    "RICE_JASMINE": {
+      "name": "Jasmine Rice Fragrant",
+      "unit": "kg",
+      "category": "Rice"
+    },
+    "WHEAT_FLOUR": {
+      "name": "Wheat Flour Organic",
+      "unit": "kg",
+      "category": "Flour"
+    },
+    "PULSES_TOOR": {
+      "name": "Toor Dal Premium",
+      "unit": "kg",
+      "category": "Pulses"
+    }
+  },
+  "packet_variations": {
+    "RICE_BASMATI": {
+      "B07BASMATI1KG": {
+        "weight": 1,
+        "asin": "B07BASMATI1KG",
+        "description": "1kg Basmati Rice Pack",
+        "mrp": 120
+      },
+      "B07BASMATI5KG": {
+        "weight": 5,
+        "asin": "B07BASMATI5KG",
+        "description": "5kg Basmati Rice Pack",
+        "mrp": 580
+      }
+    },
+    "RICE_JASMINE": {
+      "B07JASMINE1KG": {
+        "weight": 1,
+        "asin": "B07JASMINE1KG",
+        "description": "1kg Jasmine Rice Pack",
+        "mrp": 110
+      }
+    },
+    "WHEAT_FLOUR": {
+      "B07WHEAT1KG": {
+        "weight": 1,
+        "asin": "B07WHEAT1KG",
+        "description": "1kg Wheat Flour Pack",
+        "mrp": 45
+      },
+      "B07WHEAT5KG": {
+        "weight": 5,
+        "asin": "B07WHEAT5KG",
+        "description": "5kg Wheat Flour Pack",
+        "mrp": 220
+      }
+    },
+    "PULSES_TOOR": {
+      "B07TOOR1KG": {
+        "weight": 1,
+        "asin": "B07TOOR1KG",
+        "description": "1kg Toor Dal Pack",
+        "mrp": 85
+      },
+      "B07TOOR2KG": {
+        "weight": 2,
+        "asin": "B07TOOR2KG",
+        "description": "2kg Toor Dal Pack",
+        "mrp": 165
+      }
+    }
+  },
+  "daily_opening_stock": {
+    "2025-07-16": {
+      "RICE_BASMATI": {
+        "loose_stock": 100.0,
+        "packed_stock": {
+          "B07BASMATI1KG": 0,
+          "B07BASMATI5KG": 0
+        }
+      },
+      "RICE_JASMINE": {
+        "loose_stock": 50.0,
+        "packed_stock": {
+          "B07JASMINE1KG": 0
+        }
+      },
+      "WHEAT_FLOUR": {
+        "loose_stock": 80.0,
+        "packed_stock": {
+          "B07WHEAT1KG": 0,
+          "B07WHEAT5KG": 0
+        }
+      },
+      "PULSES_TOOR": {
+        "loose_stock": 50.0,
+        "packed_stock": {
+          "B07TOOR1KG": 0,
+          "B07TOOR2KG": 0
+        }
+      }
+    }
+  },
+  "last_updated": "2025-07-16T20:00:00"
+}
